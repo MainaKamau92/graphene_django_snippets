@@ -9,6 +9,7 @@
     "categories": [
         "Snippets"
     ],
+    "icon": "graphene_icon.png",
     "contributes": {
         "snippets": [
             {
