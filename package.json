@@ -1,8 +1,12 @@
 {
-    "name": "Graphene Django Snippets and Autocomplete",
+    "name": "graphenesnippets",
     "displayName": "Graphene Django Snippets and AutoComplete",
     "description": "Snippets for graphene django",
     "version": "1.0.0",
+    "publisher": "mainakamau",
+    "author": {
+        "name": "Maina Kamau"
+    },
     "engines": {
         "vscode": "^1.35.0"
     },

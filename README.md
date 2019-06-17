@@ -1,65 +1,50 @@
-# graphenesnippets README
+# Graphene Django Snippets and AutoComplete
 
-This is the README for your extension "graphenesnippets". After writing up a brief description, we recommend including the following sections.
+Graphene Django Snippets and AutoComplete is a django graphene extension that gives graphene django snippets and minimum autocompletion functionality.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Some popular commands include:
+* command "!query": Query class with two reslove methods
+* command "!mutate" : mutate method with info and **kwargs params
+* command "!fullquery" : mininum skeleton of the query class
+* command "!fullmutate" : mininum skeleton of the mutate class
 
-For example if there is an image subfolder under your extension project workspace:
+Some more features in the extension include graphene django regular code snippets ranging from query skeletons to graphene types and some autocompletion functionality.
 
-\!\[feature X\]\(images/feature-x.png\)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Minimum Skeleton for Mutations and Queries snippets:
 
-## Requirements
+![full_query_and_mutate](./gifs/full_query_and_mutate.gif)
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-## Extension Settings
+resolve methods and info contexts with is_authenticated() and is_anonymous() methods options:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+![info_context](./gifs/info_context.gif)
 
-For example:
 
-This extension contributes the following settings:
+Model types skeleton snippets:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+![model_types_class](./gifs/model_type_class.gif)
 
-## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Schemas can be run as well, together with a path snippet for the urls.py file:
+
+![mutation_query_schema](./gifs/mutation_query_schema_path.gif)
+
+
+With some of the popular autocompletes for graphene django:
+
+![type_autocomplete](./gifs/type_autocomplete.gif)
+
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+This is the initial release of the graphene snippets extension.
 
 ### 1.0.0
 
-Initial release of ...
+Initial release of Graphene Django Snippets
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
