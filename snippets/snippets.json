@@ -1,0 +1,344 @@
+{
+    "query": {
+        "prefix": "!query",
+        "body": [
+            "class Query(graphene.ObjectType):",
+            "\t${1:lorem} = graphene.Field(UserType)",
+            "\t${2:lorem} = graphene.List(UserType)",
+            "\t${3:lorem} = graphene.Field()",
+            "\t${4:lorem} = graphene.List()",
+            "$0",
+            "\tdef resolve_${2:lorem}(self, info):",
+            "\t\treturn ${pass}",
+            "$0",
+            "\tdef resolve_${1:lorem}(self, info):",
+            "\t\treturn ${pass}"
+        ],
+        "description": "Create Query snippet"
+    },
+    "resolve query method": {
+        "prefix": "resolve",
+        "body": [
+            "resolve_${2:lorem}(self, info):",
+            "\treturn ${pass}"
+        ],
+        "description": "Create resolve method"
+    },
+    "resolve full query method": {
+        "prefix": "def",
+        "body": [
+            "def resolve_${2:lorem}(self, info):",
+            "\treturn ${pass}"
+        ],
+        "description": "Create resolve method"
+    },
+    "mutate method": {
+        "prefix": "!mutate",
+        "body": [
+            "def mutate(self, info, **kwargs):",
+            "\t${1: attr1} = kwargs.get('${attr1}')",
+            "\t${2: attr2} = kwargs.get('${attr2}')",
+            "\t${3: attr3} = kwargs.get('${attr3}')"
+        ],
+        "description": "Create mutate method"
+    },
+    "Graphene Abstract Type": {
+        "prefix": "graphene.Abstract",
+        "body": [
+            "graphene.Abstract()"
+        ],
+        "description": "Create abstract type"
+    },
+    "Graphene Object Type": {
+        "prefix": "graphene.Object",
+        "body": [
+            "graphene.Object()"
+        ],
+        "description": "Create object type"
+    },
+    "Graphene InputObjectType Type": {
+        "prefix": "graphene.InputObjectType",
+        "body": [
+            "graphene.InputObjectType()"
+        ],
+        "description": "Create input object type"
+    },
+    "Graphene Interface Type": {
+        "prefix": "graphene.Interface",
+        "body": [
+            "graphene.Interface()"
+        ],
+        "description": "Create interface type"
+    },
+    "Graphene Field Type": {
+        "prefix": "graphene.Field",
+        "body": [
+            "graphene.Field()"
+        ],
+        "description": "Create Field type"
+    },
+    "Graphene InputField Type": {
+        "prefix": "graphene.InputField",
+        "body": [
+            "graphene.InputField()"
+        ],
+        "description": "Create InputField type"
+    },
+    "Graphene Schema Type": {
+        "prefix": "graphene.Schema",
+        "body": [
+            "graphene.Schema()"
+        ],
+        "description": "Create Schema type"
+    },
+    "Graphene Scalar Type": {
+        "prefix": "graphene.Scalar",
+        "body": [
+            "graphene.Scalar()"
+        ],
+        "description": "Create Scalar type"
+    },
+    "Graphene String Type": {
+        "prefix": "graphene.String",
+        "body": [
+            "graphene.String()"
+        ],
+        "description": "Create String type"
+    },
+    "Graphene ID Type": {
+        "prefix": "graphene.ID",
+        "body": [
+            "graphene.ID()"
+        ],
+        "description": "Create ID type"
+    },
+    "Graphene Int Type": {
+        "prefix": "graphene.Int",
+        "body": [
+            "graphene.Int()"
+        ],
+        "description": "Create Int type"
+    },
+    "Graphene Float Type": {
+        "prefix": "graphene.Float",
+        "body": [
+            "graphene.Float()"
+        ],
+        "description": "Create Float type"
+    },
+    "Graphene Boolean Type": {
+        "prefix": "graphene.Boolean",
+        "body": [
+            "graphene.Boolean()"
+        ],
+        "description": "Create Boolean type"
+    },
+    "Graphene Date Type": {
+        "prefix": "graphene.Date",
+        "body": [
+            "graphene.Date()"
+        ],
+        "description": "Create Date type"
+    },
+    "Graphene DateTime Type": {
+        "prefix": "graphene.DateTime",
+        "body": [
+            "graphene.DateTime()"
+        ],
+        "description": "Create DateTime type"
+    },
+    "Graphene Time Type": {
+        "prefix": "graphene.Time",
+        "body": [
+            "graphene.Time()"
+        ],
+        "description": "Create Time type"
+    },
+    "Graphene Decimal Type": {
+        "prefix": "graphene.Decimal",
+        "body": [
+            "graphene.Decimal()"
+        ],
+        "description": "Create Decimal type"
+    },
+    "Graphene JSONString Type": {
+        "prefix": "graphene.JSONString",
+        "body": [
+            "graphene.JSONString()"
+        ],
+        "description": "Create JSONString type"
+    },
+    "Graphene UUID Type": {
+        "prefix": "graphene.UUID",
+        "body": [
+            "graphene.UUID()"
+        ],
+        "description": "Create UUID type"
+    },
+    "Graphene List Type": {
+        "prefix": "graphene.List",
+        "body": [
+            "graphene.List()"
+        ],
+        "description": "Create List type"
+    },
+    "Graphene NonNull Type": {
+        "prefix": "graphene.NonNull",
+        "body": [
+            "graphene.NonNull()"
+        ],
+        "description": "Create NonNull type"
+    },
+    "Graphene Enum Type": {
+        "prefix": "graphene.Enum",
+        "body": [
+            "graphene.Enum()"
+        ],
+        "description": "Create Enum type"
+    },
+    "Graphene Argument Type": {
+        "prefix": "graphene.Argument",
+        "body": [
+            "graphene.Argument()"
+        ],
+        "description": "Create Argument type"
+    },
+    "Graphene Dynamic Type": {
+        "prefix": "graphene.Dynamic",
+        "body": [
+            "graphene.Dynamic()"
+        ],
+        "description": "Create Dynamic type"
+    },
+    "Graphene Union Type": {
+        "prefix": "graphene.Union",
+        "body": [
+            "graphene.Union()"
+        ],
+        "description": "Create Union type"
+    },
+    "Graphene Context Type": {
+        "prefix": "graphene.Context",
+        "body": [
+            "graphene.Context()"
+        ],
+        "description": "Create Context type"
+    },
+    "Graphene ResolveInfo Type": {
+        "prefix": "graphene.ResolveInfo",
+        "body": [
+            "graphene.ResolveInfo()"
+        ],
+        "description": "Create ResolveInfo type"
+    },
+    "url_path": {
+        "prefix": "path",
+        "body": [
+            "path('${1: mypath}/', csrf_exempt(GraphQLView.as_view(graphiql=True)))"
+        ],
+        "description": "graphene url path with graphiql enabled"
+    },
+    "query schema object": {
+        "prefix": "schema",
+        "body": [
+            "class Query(graphene.ObjectType):",
+            "\tpass",
+            "$0",
+            "schema = graphene.Schema(query=Query)"
+        ],
+        "description": "graphene query schema object"
+    },
+    "mutation schema object": {
+        "prefix": "schema",
+        "body": [
+            "class Mutation(graphene.ObjectType):",
+            "\tpass",
+            "$0",
+            "schema = graphene.Schema(mutation=Mutation)"
+        ],
+        "description": "graphene mutation schema object"
+    },
+    "class for graphene model type": {
+        "prefix": "class",
+        "body": [
+            "class ${1:CategoryType}(DjangoObjectType):",
+            "\tclass Meta:",
+            "\t\tmodel = ${2:Category}"
+        ],
+        "description": "class for graphene model type"
+    },
+    "user context info.is_anonymous check": {
+        "prefix": "info",
+        "body": [
+            "info.context.user.is_anonymous()"
+        ],
+        "description": "user context info.is_anonymous check"
+    },
+    "user context info.is_authenticated check": {
+        "prefix": "info",
+        "body": [
+            "info.context.user.is_authenticated()"
+        ],
+        "description": "user context info.is_authenticated check"
+    },
+    "graphene full query snipp": {
+        "prefix": "!fullquery",
+        "body": [
+            "import graphene",
+            "from graphene_django.types import DjangoObjectType",
+            "from .models import ${YourModel}",
+            "$0",
+            "$0",
+            "class ${1:ModelType}(DjangoObjectType):",
+            "\tclass Meta:",
+            "\t\tmodel = ${YourModel}",
+            "$0",
+            "class Query:",
+            "\t${2:attrs} = graphene.List(${3:ModelType})",
+            "\t${4:attr} = graphene.Field(${5:ModelType}, ${6:attr_id}=graphene.String(required=True))",
+            "$0",
+            "\tdef resolve_${7:attrs}(self, info, **kwargs):",
+            "\t# Querying a list",
+            "\t\treturn ${YourModel}.objects.all()",
+            "$0",
+            "\tdef resolve_${8:attr}(self, info, ${9:attr_id}):",
+            "\t# Querying a single question",
+            "\t\treturn ${YourModel}.objects.get(pk=${10:attr_id})",
+            "$0"
+        ]
+    },
+    "graphene full mutation snipp": {
+        "prefix": "!fullmutate",
+        "body": [
+            "import graphene",
+            "from graphene_django import DjangoObjectType",
+            "from .models import ${YourModel}",
+            "$0",
+            "$0",
+            "class ${ModelType}(DjangoObjectType):",
+            "\tclass Meta:",
+            "\t\tmodel = ${YourModel}",
+            "$0",
+            "$0",
+            "class ${MyMutation}(graphene.Mutation):",
+            "\tclass Arguments:",
+            "\t\t# The input arguments for this mutation",
+            "\t\ttext = graphene.String(required=True)",
+            "\t\tid = graphene.ID()",
+            "$0",
+            "\t# The class attributes define the response of the mutation",
+            "\t${attr} = graphene.Field(${ModelType})",
+            "$0",
+            "\tdef mutate(self, info, text, id):",
+            "\t\t${model_instance} = ${YourModel}.objects.get(pk=id)",
+            "\t\t${model_instance}.text = text",
+            "\t\t${model_instance}.save()",
+            "\t\t# Notice we return an instance of this mutation",
+            "\t\treturn ${MyMutation}(${model_instance}=${model_instance})",
+            "$0",
+            "$0",
+            "class Mutation:",
+            "\tupdate_question = ${MyMutation}.Field()"
+        ]
+    }
+}
